@@ -1,0 +1,174 @@
+:root {
+	--primary-color: #274c84;
+	--secondary-color: #c8e6f3;
+	--text-color: #2d2d2d;
+	--font-primary: 'Open Sans', sans-serif;
+	--font-secondary: 'Montserrat', sans-serif;
+}
+
+/* Set a default font and font size for the entire page, plus light bg */
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	background-color: #f5f5f5;
+	margin: 0;
+}
+
+.social-icons {
+	position: fixed;
+	top: 1.5rem;
+	right: 1.5rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.social-icons a {
+	margin-left: 1rem;
+}
+
+.social-icons i {
+	font-size: 2rem;
+}
+
+.fab {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--font-secondary);
+	color: var(--primary-color);
+}
+
+
+/* Add some padding and a light blue background to the header */
+/* header {
+	padding: 20px;
+	background-color: #00bcd4;
+	color: #2e384d;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+} */
+
+header {
+	background-color: var(--secondary-color);
+	text-align: center;
+	padding: 3rem 3rem 1rem 3rem;
+}
+
+header h1 {
+	font-size: 4rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+header p {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+header img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+
+/* Add a top border and some margin to the bio section */
+#bio {
+	border-top: 1px solid #ccc;
+	/* margin-top: 40px; */
+	padding-top: 40px;
+	margin: 0 0.75rem;
+	line-height: 1.5rem;
+}
+
+.project_header{
+	margin: 0 0.75rem;
+}
+
+/* Set the project section to use a flexbox layout */
+#projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0.75rem;
+	margin-top: 20px;
+}
+
+/* Add a border around each project, and set the background color and font color */
+.project {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	/* color: #2e384d; */
+	color: var(--primary-color);
+	padding: 20px;
+	margin-bottom: 20px;
+	flex-basis: calc(50% - 20px);
+	box-sizing: border-box;
+	text-align: center;
+}
+
+/* Set the project image to fill its container, and add some margin to the bottom of the image */
+.project img {
+	height: 325px;
+	width: auto;
+	margin-bottom: 20px;
+}
+
+/* Set the project title to be dark blue with a creative font, with a larger font size */
+.project h3 {
+	/* color: #2e384d; */
+	color: var(--primary-color);
+	font-size: 36px;
+	margin-bottom: 10px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Add some margin to the bottom of the project description */
+.project p {
+	color: var(--text-color);
+	margin-bottom: 0;
+}
+
+/* Set the footer text to be dark blue, with a smaller font size */
+footer {
+	padding: 20px;
+	background-color: white;
+	/* color: #2e384d; */
+	color: var(--primary-color);
+	font-size: 14px;
+	text-align: center;
+	/* margin: 0.75rem; */
+}
+
+/* Set the styles for smaller screens */
+@media only screen and (max-width: 600px) {
+	body{
+		font-size: 16px;
+	}
+
+	/* Set the project section to use a single column layout */
+	#projects {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+
+	/* Adjust the project box size for mobile */
+	.project {
+		flex-basis: 100%;
+		margin-bottom: 30px;
+	}
+
+	/* Decrease the project title font size for mobile */
+	.project h3 {
+		font-size: 24px;
+	}
+
+}
