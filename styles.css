@@ -143,6 +143,11 @@ header img {
 	margin-bottom: 0;
 }
 
+.doc {
+	width: 100%;
+	height: 1000px;
+}
+
 /* Set the footer text to be dark blue, with a smaller font size */
 footer {
 	padding: 20px;
